@@ -1,4 +1,5 @@
 <?php
+header('Content-Type: application/json');
 if (!isset($_GET["apikey"]) || !isset($_GET["sitekey"]) || !isset($_GET["pageurl"])) {
     echo json_encode(["error" => "Missing parameters"]);
     exit;
